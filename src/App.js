@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderContainer from "./container/HeaderContainer";
+import CourseSelectionContainer from "./container/CourseSelectionContainer";
+import StudentsViewingContainer from "./container/StudentsViewingContainer";
+import TopCategoriesContainer from "./container/TopCategoriesContainer";
+import FeaturedTopicsContainer from "./container/FeaturedTopicsContainer";
+import AdvertisementContainer from "./container/AdvertisementContainer";
+import FooterContainer from "./container/FooterContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Yuko */}
+      <HeaderContainer />
+      {/* Lily */}
+      <CourseSelectionContainer />
+      {/* Phoebe */}
+      <StudentsViewingContainer />
+      {/* Ayako */}
+      <TopCategoriesContainer />
+      <FeaturedTopicsContainer />
+      <AdvertisementContainer />
+      <FooterContainer />
+    </>
   );
 }
 
