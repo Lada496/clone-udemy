@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
+// font-weight/line-height/font-size/color should be in body tag
 const FeaturedTopics = styled.div`
   margin-top: 4.8rem;
   background-color: #f7f9fa;
@@ -9,8 +10,11 @@ const FeaturedTopics = styled.div`
   font-size: 1.6rem;
   color: #1c1d1f;
 `
-// const LoggedOutFormTrendingTopics = styled.div``
 const FeaturedTopicsSection = styled.div`
+  width: 100%;
+  max-width: 134rem;
+  margin-right: auto;
+  margin-left: auto;
   padding: 6.4rem 2.4rem;
 `
 const FeaturedTopicsSectionTitle = styled.h2`
@@ -20,18 +24,14 @@ const FeaturedTopicsSectionTitle = styled.h2`
   margin-bottom: 2.4rem;
 `
 const FeaturedTopicsContain = styled.div`
-  width: 100%;
-  max-width: 134rem;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 `
 const FeaturedTopicsCategory = styled.div`
   padding-right: 0.8rem;
-  /* display: inline-block; */
   margin-bottom: 2.4rem;
+  width: calc(100%/4 - 1.6rem);
 `
 const FeaturedTopicsTitle = styled.h2`
   margin-bottom: 2.4rem;
@@ -58,11 +58,12 @@ const FeaturedTopicsBtn = styled.a`
   background-color: transparent;
   border: 1px solid #1c1d1f;
   text-decoration: none;
-  /* height: 4rem; */
-  /* position: relative; */
-  /* align-items: center;  ?? */
-  /* justify-content: center; */
-  padding: 1.2rem;
+  height: 4rem; 
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 1.2rem;
   cursor: pointer;
   font-weight: 700;
   line-height: 1.2;
@@ -72,7 +73,6 @@ const FeaturedTopicsBtn = styled.a`
 const FeaturedTopicsContainer = () => {
   return (
     <FeaturedTopics>
-      <div className="logged-out-form-trending-topics">
         <FeaturedTopicsSection>
           <FeaturedTopicsSectionTitle>Featured topics by category</FeaturedTopicsSectionTitle>
           <FeaturedTopicsContain>
@@ -152,7 +152,6 @@ const FeaturedTopicsContainer = () => {
             <FeaturedTopicsBtn href="#"><span>Explore more topics</span></FeaturedTopicsBtn>
           </FeaturedTopicsContain>
         </FeaturedTopicsSection>
-      </div>
     </FeaturedTopics>
   );
 };
