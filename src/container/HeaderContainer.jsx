@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../components/Navigation/Navigation";
 
 const HeaderContainer = () => {
-  return <div>HeaderContainer</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 };
 
 export default HeaderContainer;
