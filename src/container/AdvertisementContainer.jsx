@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-// width container?
 
-// font-weight/line-height/font-size/color should be in body tag
 const Advertisement = styled.div`
+  margin: 0;
   margin-top: 6.4rem;
   font-weight: 400;
   line-height: 1.4;
@@ -28,7 +27,6 @@ const AdvertisementWrapper = styled.div`
   display: flex;
   padding: 0;
 `
-// initial setting: image width 100%
 const AdvertisementImg = styled.img`
   display: block;
   width: 400px;
@@ -44,16 +42,17 @@ const Description = styled.div`
   text-align: left;
   max-width: 40rem;
 `
-// font-family, margin
 const DescriptionHeading = styled.h3`
+  font-family: var(--suisse-works-alternative);
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 1.25;
+  letter-spacing: -.05rem;
   margin-bottom: 0.8rem;
 `
-// font-family, margin
 const DescriptionPara = styled.p`
   font-size: 1.9rem;
+  margin-top: 0;
   margin-bottom: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
@@ -67,12 +66,14 @@ const DescriptionBtnLink = styled.a`
   position: relative;
   align-items: center;
   display: inline-flex;
+  min-width: 8rem;
   justify-content: center;
   padding: 0 1.2rem;
   cursor: pointer;
   font-weight: 700;
   line-height: 1.2;
   font-size: 1.6rem;
+  letter-spacing: -.02rem;
 `
 const AdvertisementWrapper2 = styled.div`
   display: flex;
@@ -84,6 +85,7 @@ const AdvertisementImg2 = styled.img`
   height: 400px;
   object-fit: contain;
   max-width: 100%;
+  margin: 0;
 `
 const Description2 = styled.div`
   display: flex;
@@ -94,13 +96,11 @@ const Description2 = styled.div`
   margin: 0 9.6rem 0 0;
 `
 const DescriptionHeadingImg = styled.img`
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 1.25;
   margin-bottom: 0.8rem;
+  width: 282px;
+  height: 48px;
 `
 const Advertisement3 = styled.div`
-  /* display: block; */
   margin: 6.4rem 0 9.6rem 0;
   font-weight: 400;
   line-height: 1.4;
@@ -109,22 +109,30 @@ const Advertisement3 = styled.div`
 `
 const CompanyLogo = styled.div`
   margin-top: 6.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  color: #1c1d1f;
 `
 const CompanyLogoSection = styled.section`
   background-color: #f7f9fa;
-  padding: 3.2rem 0 1.6rem 0;
+  border: 0;
+  padding: 3.2rem 0;
+  margin-top: 4.8rem;
 `
 const CompanyLogoContain = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: -1.6rem;
 `
-// font-family
 const CompanyLogoHeading = styled.h3`
+  font-family: var(--suisse-works-alternative);
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.35;
+  letter-spacing: -0.02rem;
   margin: 0 0 0 0.8rem;
 `
 const CompanyLogoWrapper = styled.a`
@@ -171,19 +179,19 @@ const AdvertisementContainer = () => {
           <CompanyLogoHeading>Trusted by companies of all sizes</CompanyLogoHeading>
           <CompanyLogoWrapper>
             <CompanyLogoEach>
-              <CompanyLogoImg src="/images/advertisement/nasdaq-dark.svg" />
+              <CompanyLogoImg src="/images/advertisement/nasdaq-dark.svg" style={{ width: 115, height: 44}} />
             </CompanyLogoEach>
             <CompanyLogoEach>
-              <CompanyLogoImg src="/images/advertisement/volkswagen-dark.svg" />
+              <CompanyLogoImg src="/images/advertisement/volkswagen-dark.svg" style={{ width: 44, height: 44}} />
             </CompanyLogoEach>
             <CompanyLogoEach>
-              <CompanyLogoImg src="/images/advertisement/box-dark.svg" />
+              <CompanyLogoImg src="/images/advertisement/box-dark.svg" style={{ width: 67, height: 44}} />
             </CompanyLogoEach>
             <CompanyLogoEach>
-              <CompanyLogoImg src="/images/advertisement/netapp-dark.svg" />
+              <CompanyLogoImg src="/images/advertisement/netapp-dark.svg" style={{ width: 115, height: 44}} />
             </CompanyLogoEach>
             <CompanyLogoEach>
-              <CompanyLogoImg src="/images/advertisement/eventbrite-dark.svg" />
+              <CompanyLogoImg src="/images/advertisement/eventbrite-dark.svg" style={{ width: 115, height: 44}} />
             </CompanyLogoEach>
           </CompanyLogoWrapper>
         </CompanyLogoContain>

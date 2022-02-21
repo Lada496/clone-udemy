@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// font-weight/line-height/font-size/color should be in body tag
+
 const TopCategories = styled.div`
   margin-top: 6.4rem;
   font-weight: 400;
@@ -20,11 +20,14 @@ const TopCategoriesSectionTitle = styled.h2`
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: -0.02rem;
+  margin-top: 0;
   margin-bottom: 2.4rem;
 `
 const TopCategoriesContain = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -1.6rem -3.2rem 0;
 `
 const TopCategoriesCard = styled.a`
   margin: 0 1.6rem 1.6rem 0;
@@ -34,14 +37,11 @@ const TopCategoriesCard = styled.a`
 const CategoryCardImgWrapper = styled.div`
   overflow: hidden;
 `
-
-// cubic-bezier (not sure about the speed)
-// sclae is not sure
 const CategoryCardImg = styled.img`
   background-color: #f7f9fa;
   display: block;
   object-fit: contain;
-  transition: transform 100ms cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: transform 100ms cubic-bezier(0.2, 0.0, 1.0, 0.9);
   max-width: 100%;
   height: auto;
 
@@ -57,6 +57,7 @@ const CategoryCardTitleSapn = styled.span`
   font-weight: 700;
   line-height: 1.2;
   font-size: 1.6rem;
+  letter-spacing: -0.02rem;
 `
 
 const TopCategoriesContainer = () => {
