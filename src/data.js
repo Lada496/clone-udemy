@@ -1,7 +1,7 @@
 export const courses = [
     {
       id: 1,
-      img: "123",
+      img: "images/studentsViewing/courses/course1.png",
       title: "The Complete JavaScript Course 2022: From Zero to Expert",
       desc:"Jonas Schemedtmann",
       rateScore:4.7,
@@ -12,7 +12,7 @@ export const courses = [
     },
     {
         id: 2,
-        img: "456",
+        img: "images/studentsViewing/courses/course2.png",
         title: "Microsoft Excel - Excel from Beginner to Advanced ",
         desc:"Kyle Pew, Office Newb",
         rateScore:4.7,
@@ -22,7 +22,7 @@ export const courses = [
     },
     {
         id: 3,
-        img: "789",
+        img: "images/studentsViewing/courses/course3.png",
         title: "The Complete Digital Marketing Course - 12 Courses in 1",
         desc:"Rob Percival, Daraph Walsh, Codestars by Rob Percival",
         rateScore:4.5,
@@ -32,7 +32,7 @@ export const courses = [
     },
     {
         id: 4,
-        img: "101112",
+        img: "images/studentsViewing/courses/course4.png",
         title: "Learn Ethical Hacking From Scratch",
         desc:"Zaid Sabih, z Security",
         rateScore:4.6,
@@ -42,7 +42,7 @@ export const courses = [
     },
     {
         id: 5,
-        img: "131415",
+        img: "images/studentsViewing/courses/course5.png",
         title: "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
         desc:"Colt Steele, lan Schoononver",
         rateScore:4.6,
@@ -56,7 +56,7 @@ export const courses = [
   export const sugestedCourses = [
     {
       id: 1,
-      img: "123",
+      img: "images/studentsViewing/suggestedCourses/sc1.png",
       title: "Red Team Ethical Hacking - Beginner",
       desc:"Chris Siles",
       rateScore:4.3,
@@ -67,7 +67,7 @@ export const courses = [
     },
     {
         id: 2,
-        img: "456",
+        img: "images/studentsViewing/suggestedCourses/sc2.png",
         title: "Cross-Site Scripting(XSS): The Practical Guide ",
         desc:"Christophe Limpalair, Cybr Training",
         rateScore:4.4,
@@ -78,7 +78,7 @@ export const courses = [
     {
         id: 3,
         img: "789",
-        title: "Modern Ethical Hacking - Complete Course",
+        img: "images/studentsViewing/suggestedCourses/sc3.png",
         desc:"Vonnie Hudson",
         rateScore:4.3,
         reviewerNum:"35",
@@ -87,7 +87,7 @@ export const courses = [
     },
     {
         id: 4,
-        img: "101112",
+        img: "images/studentsViewing/suggestedCourses/sc4.png",
         title: "Ethical Hacking + Website Hacking + Mobile Hacking v2.0",
         desc:"Shubham Pareek",
         rateScore:4.3,
@@ -97,7 +97,7 @@ export const courses = [
     },
     {
         id: 5,
-        img: "131415",
+        img: "images/studentsViewing/suggestedCourses/sc5.png",
         title: "Learn Android Hacking For Beginners",
         desc:"Colt Steele, lan Schoononver",
         rateScore:4.2,
