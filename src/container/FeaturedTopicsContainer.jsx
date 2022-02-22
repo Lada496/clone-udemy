@@ -1,10 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
 
-// font-weight/line-height/font-size/color should be in body tag
+
 const FeaturedTopics = styled.div`
-  margin-top: 4.8rem;
+  margin: 0;
+  margin-top: 6.4rem;
   background-color: #f7f9fa;
+  border: 0;
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.6rem;
@@ -21,6 +23,8 @@ const FeaturedTopicsSectionTitle = styled.h2`
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: -0.02rem;
+  margin-top: 0;
   margin-bottom: 2.4rem;
 `
 const FeaturedTopicsContain = styled.div`
@@ -35,7 +39,11 @@ const FeaturedTopicsCategory = styled.div`
 `
 const FeaturedTopicsTitle = styled.h2`
   margin-bottom: 2.4rem;
+  margin-top: 0;
   font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
 `
 const FeaturedTopicsTopic = styled.div`
   margin-top: 2.4rem;
@@ -68,6 +76,7 @@ const FeaturedTopicsBtn = styled.a`
   font-weight: 700;
   line-height: 1.2;
   font-size: 1.4rem;
+  letter-spacing: -0.02rem;
 `
 
 const FeaturedTopicsContainer = () => {
