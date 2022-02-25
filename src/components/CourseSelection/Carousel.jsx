@@ -38,7 +38,7 @@ const Carousel = ({ data }) => {
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
         numberOfCards={5}
-        gutter={10}
+        gutter={30}
         leftChevron={<ArrowBtn>{"<"}</ArrowBtn>}
         rightChevron={<ArrowBtn>{">"}</ArrowBtn>}
         outsideChevron
@@ -90,7 +90,7 @@ const ArrowBtn = styled.button`
 
 const Title = styled.div`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   &:hover {
     opacity: 0.7;
@@ -133,7 +133,7 @@ const OnSalePrice = styled.p`
 `;
 
 const ImgFrame = styled.img`
-  width: 30rem;
+  width: 20rem;
   height: auto;
   border: 1px solid #c4c4c4;
   cursor: pointer;

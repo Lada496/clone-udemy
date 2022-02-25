@@ -62,7 +62,7 @@ const H1 = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   padding: 1rem;
 `;
 
