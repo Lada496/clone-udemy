@@ -16,6 +16,7 @@ const Navigation = () => {
           bgcolor: "background.paper",
           height: 72,
           px: 2.4,
+          boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
         }}
       >
         <Toolbar disableGutters sx={{ my: "auto", gap: 1 }}>
