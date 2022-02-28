@@ -5,6 +5,8 @@ export const TextContainer = styled.p`
   text-align: center;
   margin: 0;
   font-weight: 400;
+  display: block;
+  width: 250px;
 `;
 export const LinkContainer = styled.p`
   font-size: 1.6rem;

@@ -1,8 +1,10 @@
 import styled from "styled-components";
+// normal:#1c1d1f active:#5624d0
 export const MenuButtonContainer = styled.button`
   position: relative;
   align-items: center;
   border: none;
+  color: ${(props) => (props.isActive ? "#5624d0" : "#1c1d1f")};
   cursor: pointer;
   display: inline-flex;
   min-width: 8rem;
