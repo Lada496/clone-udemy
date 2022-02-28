@@ -10,6 +10,7 @@ import MenuButtom from "../../share/UIElements/MenuButton/MenuButtom";
 import RightTooltip from "./RightTooltip/RightTooltip";
 import SearchBar from "./SearchBar/SearchBar";
 import CartTooltip from "./CartTooltip/CartTooltip";
+import Categories from "./Categories/Categories";
 const udemyBusinessMessage =
   "Get your team access to over 6,000 top Udemy courses, anytime, anywhere.";
 const techOnUdemy =
@@ -19,15 +20,25 @@ const Navigation = () => {
     <Tooltip {...props} classes={{ popper: className }} />
   ))(({ theme }) => ({
     [`& .${tooltipClasses.tooltip}`]: {
-      // backgroundColor: theme.palette.common.white,
       backgroundColor: "transparent",
-      // boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
-      width: 450,
+      // minWidth: 250,
       color: theme.palette.grey[900],
       borderRadius: 0,
       padding: 0,
     },
   }));
+  const LeftTooltipWithStyle = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: "transparent",
+      minWidth: 830,
+      color: theme.palette.grey[900],
+      borderRadius: 0,
+      padding: 0,
+    },
+  }));
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -48,7 +59,14 @@ const Navigation = () => {
               //   height="34"
             />
           </Box>
-          <MenuButtom>Categories</MenuButtom>
+          <MenuButtom>
+            <LeftTooltipWithStyle
+              title={<Categories />}
+              placement="bottom-start"
+            >
+              <span>Categories</span>
+            </LeftTooltipWithStyle>
+          </MenuButtom>
           <Box sx={{ flexGrow: 1 }}>
             <SearchBar />
           </Box>

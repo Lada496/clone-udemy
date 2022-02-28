@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import NavCategoryProvider from "./share/context/nav-category-context";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <NavCategoryProvider>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </NavCategoryProvider>,
+  document.getElementById("root")
 );
