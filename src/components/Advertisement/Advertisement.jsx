@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 
+import LinkButton from '../../share/UIElements/LinkButton/LinkButton';
+
 
 const AdvertisementContainer = styled.div`
   margin: 0;
@@ -164,7 +166,8 @@ const Advertisement = () => {
               <DescriptionHeading>Become an instructor</DescriptionHeading>
               <DescriptionPara>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</DescriptionPara>
               <div>
-                <DescriptionBtnLink href="#">Start teaching today</DescriptionBtnLink>
+                {/* <DescriptionBtnLink href="#">Start teaching today</DescriptionBtnLink> */}
+                <LinkButton height='4.8rem'>Start teaching today</LinkButton>
               </div>
             </Description>
           </AdvertisementWrapper>
@@ -205,7 +208,8 @@ const Advertisement = () => {
               <DescriptionHeadingImg src="/images/advertisement/logo-ub.svg" />
               <DescriptionPara>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</DescriptionPara>
               <div>
-                <DescriptionBtnLink href="#">Get Udemy business</DescriptionBtnLink>
+                {/* <DescriptionBtnLink href="#">Get Udemy business</DescriptionBtnLink> */}
+                <LinkButton height='4.8rem'>Get Udemy business</LinkButton>
               </div>
             </Description2>
             <AdvertisementImg2 src="/images/advertisement/ub-2x-v3.jpeg" />
@@ -223,7 +227,8 @@ const Advertisement = () => {
             <DescriptionHeading>Transform your life through education</DescriptionHeading>
               <DescriptionPara>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</DescriptionPara>
               <div>
-                <DescriptionBtnLink href="#">Find out how</DescriptionBtnLink>
+                {/* <DescriptionBtnLink href="#">Find out how</DescriptionBtnLink> */}
+                <LinkButton height='4.8rem'>Find out how</LinkButton>
               </div>
             </Description>
           </AdvertisementWrapper>
