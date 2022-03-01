@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-
 import LinkButton from '../../share/UIElements/LinkButton/LinkButton';
 
 
@@ -58,24 +57,6 @@ const DescriptionPara = styled.p`
   margin-bottom: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
-`
-const DescriptionBtnLink = styled.a`
-  background-color: #1c1d1f;
-  color: #fff;
-  height: 4.8rem;
-  width: auto;
-  text-decoration: none;
-  position: relative;
-  align-items: center;
-  display: inline-flex;
-  min-width: 8rem;
-  justify-content: center;
-  padding: 0 1.2rem;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 1.6rem;
-  letter-spacing: -.02rem;
 `
 const AdvertisementWrapper2 = styled.div`
   display: flex;
@@ -166,7 +147,6 @@ const Advertisement = () => {
               <DescriptionHeading>Become an instructor</DescriptionHeading>
               <DescriptionPara>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</DescriptionPara>
               <div>
-                {/* <DescriptionBtnLink href="#">Start teaching today</DescriptionBtnLink> */}
                 <LinkButton height='4.8rem'>Start teaching today</LinkButton>
               </div>
             </Description>
@@ -208,7 +188,6 @@ const Advertisement = () => {
               <DescriptionHeadingImg src="/images/advertisement/logo-ub.svg" />
               <DescriptionPara>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</DescriptionPara>
               <div>
-                {/* <DescriptionBtnLink href="#">Get Udemy business</DescriptionBtnLink> */}
                 <LinkButton height='4.8rem'>Get Udemy business</LinkButton>
               </div>
             </Description2>
@@ -227,7 +206,6 @@ const Advertisement = () => {
             <DescriptionHeading>Transform your life through education</DescriptionHeading>
               <DescriptionPara>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</DescriptionPara>
               <div>
-                {/* <DescriptionBtnLink href="#">Find out how</DescriptionBtnLink> */}
                 <LinkButton height='4.8rem'>Find out how</LinkButton>
               </div>
             </Description>
@@ -235,7 +213,6 @@ const Advertisement = () => {
         </AdvertisementContain>
       </AdvertisementSection>
     </Advertisement3>
-
     </>
   )
 }
