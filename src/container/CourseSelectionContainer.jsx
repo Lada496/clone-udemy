@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Carousel from "../components/CourseSelection/Carousel";
-import { pythonData } from "../course-selection-data/data";
-import { js } from "../course-selection-data/data";
-import { excel } from "../course-selection-data/data";
-import { aws } from "../course-selection-data/data";
-import { dataScience } from "../course-selection-data/data";
+import { pythonData } from "../data/course-selection-data/data";
+import { js } from "../data/course-selection-data/data";
+import { excel } from "../data/course-selection-data/data";
+import { aws } from "../data/course-selection-data/data";
+import { dataScience } from "../data/course-selection-data/data";
 const CourseSelectionContainer = () => {
   const [triggerElement, setTriggerElement] = useState("Python");
 

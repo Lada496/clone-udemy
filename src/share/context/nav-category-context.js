@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
-import { categories } from "../../components/Navigation/nav-categories";
-import { subCategories } from "../../components/Navigation/nav-sub-categories";
-import { subSubCategories } from "../../components/Navigation/nav-sub-sub-categories";
+import { categories } from "../../data/navigation/nav-categories";
+import { subCategories } from "../../data/navigation/nav-sub-categories";
+import { subSubCategories } from "../../data/navigation/nav-sub-sub-categories";
 const initState = {
   currentCategory: null,
   currentSubCategory: null,

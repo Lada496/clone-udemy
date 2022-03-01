@@ -103,13 +103,13 @@ const Navigation = () => {
               <ShoppingCartOutlinedIcon sx={{ fontSize: 26 }} />
             </RightTooltipWithStyle>
           </MenuButtom>
-          <LinkButton color="white" height="2rem" width="6.3rem">
+          <LinkButton color="white" height="4rem" width="8.6rem">
             Log in
           </LinkButton>
-          <LinkButton height="2rem" width="6.3rem">
+          <LinkButton height="4rem" width="8.6rem">
             Sign up
           </LinkButton>
-          <LinkButton color="white" height="2rem">
+          <LinkButton color="white" height="4rem" width="4rem">
             <LanguageIcon fontSize="large" />
           </LinkButton>
         </Toolbar>
