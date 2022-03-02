@@ -7,7 +7,7 @@ const RightTooltip = ({ text, buttonMessage }) => {
     <TooltipCard>
       <CardContainer>
         <TextContainer>{text}</TextContainer>
-        <LinkButton fontSize="1.8rem" height="4.8rem" width="100%">
+        <LinkButton fontSize="1.6rem" height="4.8rem" width="100%">
           {buttonMessage}
         </LinkButton>
       </CardContainer>
