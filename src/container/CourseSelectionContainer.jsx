@@ -130,7 +130,7 @@ const BorderStyle = styled.div`
 
 const H1 = styled.h1`
   font-family: var(--suisse-works-alternative);
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 800;
   padding: 6rem 0 0.8rem;
   margin-left: 2.4rem;
@@ -146,11 +146,11 @@ const ExplanationContainer = styled.div`
 `;
 
 const DiscriptionContainer = styled.div`
-  font-size: 1.8rem;
-  max-width: 90rem;
+  font-size: 1.6rem;
+  max-width: 82rem;
 `;
 const Subtitle = styled.p`
-  font-size: 2rem;
+  font-size: 1.9rem;
   padding: 0.8rem 0;
   margin-left: 2.4rem;
   margin-bottom: 1rem;

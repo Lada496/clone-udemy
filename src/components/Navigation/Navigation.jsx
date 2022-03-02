@@ -45,8 +45,8 @@ const Navigation = () => {
         position="static"
         sx={{
           bgcolor: "background.paper",
-          height: 72,
-          px: 2.4,
+          height: "7.2rem",
+          px: "2.4rem",
           boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
         }}
       >
@@ -55,8 +55,8 @@ const Navigation = () => {
             <img
               src="/images/header/logo-udemy.svg"
               alt="Udemy"
-              width="100"
-              //   height="34"
+              width="91"
+              height="34"
             />
           </Box>
           <MenuButtom>
@@ -100,17 +100,22 @@ const Navigation = () => {
               title={<CartTooltip />}
               placement="bottom-end"
             >
-              <ShoppingCartOutlinedIcon sx={{ fontSize: 26 }} />
+              <ShoppingCartOutlinedIcon sx={{ fontSize: 24 }} />
             </RightTooltipWithStyle>
           </MenuButtom>
-          <LinkButton color="white" height="4rem" width="8.6rem">
+          <LinkButton
+            fontSize="1.4rem"
+            color="white"
+            height="4rem"
+            width="8rem"
+          >
             Log in
           </LinkButton>
-          <LinkButton height="4rem" width="8.6rem">
+          <LinkButton fontSize="1.4rem" height="4rem" width="8rem">
             Sign up
           </LinkButton>
           <LinkButton color="white" height="4rem" width="4rem">
-            <LanguageIcon fontSize="large" />
+            <LanguageIcon sx={{ fontSize: "2rem" }} />
           </LinkButton>
         </Toolbar>
       </AppBar>
