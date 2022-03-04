@@ -13,7 +13,7 @@ comming soon :)
 
 ## Challenges
 
-- To avoid unnecessary merge conflicts and use issues to communicate via GitHub: We practiced using GitHub [here](https://github.com/Lada496/github-practice) before this project. (Releated article: [GitHub: We Are Save Main Repository Committee](https://dev.to/lada496/github-we-are-save-main-repository-committee-2cb4), )
+- To avoid unnecessary merge conflicts: We practiced using GitHub [here](https://github.com/Lada496/github-practice) before this project. (Releated article: [GitHub: We Are Save Main Repository Committee](https://dev.to/lada496/github-we-are-save-main-repository-committee-2cb4), )
 - To use issues to communicate via GitHub (Releated article: [GitHub: Understand issue close keywords with experiments](https://dev.to/lada496/github-understand-issue-close-keywords-with-experiments-2n5c))
 - To share individual tasks together: We uesd Slack and Trello
   <img width="1432" alt="Screen Shot 2022-02-28 at 19 15 02" src="https://user-images.githubusercontent.com/67321065/156828276-b8e641f2-5778-4c93-8a42-fe64c4770da4.png">
