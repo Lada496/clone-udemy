@@ -24,6 +24,8 @@ comming soon :)
 - [Yuko](https://github.com/Lada496): Create categories' menu list by using material ui, context API, and useReducer
   ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/67321065/156828182-73cf0477-6fb6-4793-995a-a04046baac99.gif)
 
+- [Ayako](https://github.com/Ayako-Yokoe): Using GitHub, especially understanding pull request workflow and the GitHub terms was challenging until I got used to it.
+
 
 ## Buit With
 
