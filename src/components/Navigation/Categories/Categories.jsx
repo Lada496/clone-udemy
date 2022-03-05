@@ -1,7 +1,7 @@
 import { MenuContainer, MenuCard, SubTitleContext } from "./Categories.styles";
 import CategoryItem from "../CategoryItem/CategoryItem";
 import TooltipCard from "../TooltipCard/TooltipCard";
-import { categories } from "../nav-categories";
+import { categories } from "../../../data/navigation/nav-categories";
 import useNavCategory from "../../../share/hooks/use-nav-category";
 import CategoriesPopularTopicItem from "../CategoriesPopularTopicItem/CategoriesPopularTopicItem";
 

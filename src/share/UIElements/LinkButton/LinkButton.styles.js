@@ -11,8 +11,8 @@ export const LinkButtonContainer = styled.a`
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  padding: 1rem 1rem;
-  border: 1.5px solid var(--color-black);
+  padding: 0rem 1.2rem;
+  border: 1px solid var(--color-black);
   cursor: pointer;
   font-weight: 700;
   line-height: 1.2;

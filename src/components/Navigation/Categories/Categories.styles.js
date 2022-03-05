@@ -4,18 +4,18 @@ export const MenuContainer = styled.div`
   padding: 0;
   margin: 0;
   width: fit-content;
-  height: 700px;
+  height: 650px;
   align-items: center;
   grid-template-columns: repeat(3, auto);
 `;
 export const MenuCard = styled.div`
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   height: inherit;
-  border: #dbdcdd solid 1px;
-  padding: 2rem 1.5rem;
-  box-sizing: border-box;
+  border: #dbdcdd solid 0.5px;
+  padding: 1.5rem 0.8rem;
+  /* box-sizing: border-box; */
 `;
 export const SubTitleContext = styled.h3`
   color: #707476;
