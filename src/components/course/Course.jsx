@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Star, StarHalf } from '@mui/icons-material';
-import ItemsCarousel from "react-items-carousel";
 
 import styled from "styled-components";
 
@@ -144,6 +143,7 @@ const Course = ( {item} ) => {
                        while(increment < item.rateScore) {
 
                           if( (item.rateScore-increment)<1){
+                            increment++;
                             return (<StarHalf style={{color:"#e59819"}}></StarHalf>)
                           }
                           increment++;
