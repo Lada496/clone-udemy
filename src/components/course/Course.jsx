@@ -126,7 +126,7 @@ const Course = ( {item} ) => {
 
     <Container>
         <CourseImgWrapper>
-            <CourseImg src={item.img}></CourseImg>
+            <CourseImg src={item.img} alt={item.title}></CourseImg>
         </CourseImgWrapper>
 
         <CourseTextWrapper >
