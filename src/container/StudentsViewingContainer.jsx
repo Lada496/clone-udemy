@@ -9,12 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
   faAngleRight,
-  faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from 'react';
 import ItemsCarousel from "react-items-carousel";
-import { ChevronRight } from "@mui/icons-material";
+
 
 const Container = styled.div`
   margin-top: 6.4rem;
