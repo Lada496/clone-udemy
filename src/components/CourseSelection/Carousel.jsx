@@ -68,8 +68,7 @@ const Carousel = ({ data }) => {
 
 
   return (
-    <div style={{ padding: `0 ${chevronWidth}px` }}>
-              <CourseWrapper>       
+        <CourseWrapper>       
             <ItemsCarousel
               requestToChangeActive={setActiveItemIndex}
               activeItemIndex={activeItemIndex}
@@ -98,46 +97,6 @@ const Carousel = ({ data }) => {
             </ItemsCarousel>
         </CourseWrapper>
 
-    
-      {/* <ItemsCarousel
-        requestToChangeActive={setActiveItemIndex}
-        activeItemIndex={activeItemIndex}
-        numberOfCards={5}
-        gutter={30}
-        leftChevron={<ArrowBtn>{"<"}</ArrowBtn>}
-        rightChevron={<ArrowBtn>{">"}</ArrowBtn>}
-        outsideChevron
-        chevronWidth={chevronWidth}
-      >
-        {data.map((item) => (
-          <>
-            <ImgFrame src={images[item.id - 1]} alt={item.title} />
-            <Title>{item.title}</Title>
-            <AuthorAndRev>{item.author}</AuthorAndRev>
-            <RateAndRev>
-              <Rate>{item.rate}</Rate>&nbsp;
-              <Rating src="/images/course-selection/rate.svg" alt="rate" />
-              &nbsp;&nbsp;
-              <AuthorAndRev>({item.review})</AuthorAndRev>
-            </RateAndRev>
-            {item.onSale ? (
-              <Flex>
-                <OnSalePrice>CA$23.99</OnSalePrice>&nbsp;&nbsp;&nbsp;
-                <RegularPrice>CA${item.price}</RegularPrice>
-              </Flex>
-            ) : (
-              <OriginalPrice>CA${item.price}</OriginalPrice>
-            )}
-            {item.bestseller && (
-              <BestSeller
-                src="/images/course-selection/bestseller.svg"
-                alt="bestseller"
-              />
-            )}
-          </>
-        ))}
-      </ItemsCarousel> */}
-    </div>
   );
 };
 
