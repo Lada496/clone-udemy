@@ -1,78 +1,102 @@
 import React, { useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import styled from "styled-components";
-import Course1 from "../../assets/1.png";
-import Course2 from "../../assets/2.png";
-import Course3 from "../../assets/3.png";
-import Course4 from "../../assets/4.png";
-import Course5 from "../../assets/5.png";
-import Course6 from "../../assets/6.png";
-import Course7 from "../../assets/7.png";
-import Course8 from "../../assets/8.png";
-import Course9 from "../../assets/9.png";
-import Course10 from "../../assets/10.png";
-import Course11 from "../../assets/11.png";
-import Course12 from "../../assets/12.png";
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleLeft,
+  faAngleRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+
+import Course from "../course/Course";
+
+const Container = styled.div`
+  margin-top: 6.4rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+`;
+const CoursesList = styled.div`
+  margin-top: 4.8rem;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+const StudentsViewingTitle = styled.h2`
+  margin-bottom: 1.6rem;
+
+  max-width: 80rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+`;
+const CourseWrapper = styled.div`
+  position: relative;
+`;
+const Arrow = styled.div`
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: black;
+  border: 1px solid #6a6f73;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 15%;
+  right: ${(props) => props.direction === "right" && "-1.6rem"};
+  left: ${(props) => props.direction === "left" && "-1.6rem"};
+
+  margin: auto;
+  cursor: pointer;
+
+  z-index: 2;
+
+  :hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  }
+`
 
 const Carousel = ({ data }) => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 50;
-  const images = [
-    Course1,
-    Course2,
-    Course3,
-    Course4,
-    Course5,
-    Course6,
-    Course7,
-    Course8,
-    Course9,
-    Course10,
-    Course11,
-    Course12,
-  ];
+
 
   return (
-    <div style={{ padding: `0 ${chevronWidth}px` }}>
-      <ItemsCarousel
-        requestToChangeActive={setActiveItemIndex}
-        activeItemIndex={activeItemIndex}
-        numberOfCards={5}
-        gutter={30}
-        leftChevron={<ArrowBtn>{"<"}</ArrowBtn>}
-        rightChevron={<ArrowBtn>{">"}</ArrowBtn>}
-        outsideChevron
-        chevronWidth={chevronWidth}
-      >
-        {data.map((item) => (
-          <>
-            <ImgFrame src={images[item.id - 1]} alt={item.title} />
-            <Title>{item.title}</Title>
-            <AuthorAndRev>{item.author}</AuthorAndRev>
-            <RateAndRev>
-              <Rate>{item.rate}</Rate>&nbsp;
-              <Rating src="/images/course-selection/rate.svg" alt="rate" />
-              &nbsp;&nbsp;
-              <AuthorAndRev>({item.review})</AuthorAndRev>
-            </RateAndRev>
-            {item.onSale ? (
-              <Flex>
-                <OnSalePrice>CA$23.99</OnSalePrice>&nbsp;&nbsp;&nbsp;
-                <RegularPrice>CA${item.price}</RegularPrice>
-              </Flex>
-            ) : (
-              <OriginalPrice>CA${item.price}</OriginalPrice>
-            )}
-            {item.bestseller && (
-              <BestSeller
-                src="/images/course-selection/bestseller.svg"
-                alt="bestseller"
-              />
-            )}
-          </>
-        ))}
-      </ItemsCarousel>
-    </div>
+        <CourseWrapper>       
+            <ItemsCarousel
+              requestToChangeActive={setActiveItemIndex}
+              activeItemIndex={activeItemIndex}
+              numberOfCards={5}
+              gutter={15}
+              leftChevron={<Arrow direction="left">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleLeft}
+                              />}
+                          </Arrow>}
+              rightChevron={<Arrow direction="right">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleRight}
+                              />}
+                            </Arrow>}
+              outsideChevron={false}
+              chevronWidth={chevronWidth}
+            >
+      
+                {data.map((item) => (
+                    <Course item={item} key={item.id} />
+                ))}
+
+            </ItemsCarousel>
+        </CourseWrapper>
+
   );
 };
 

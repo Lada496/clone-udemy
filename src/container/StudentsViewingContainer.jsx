@@ -3,16 +3,17 @@ import React from "react";
 import { courses, sugestedCourses } from "../data/student-viewing-data/data";
 
 import Course from "../components/course/Course";
-import SuggestedCourse from "../components/course/SuggestedCourse";
 
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
   faAngleRight,
-  faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { ChevronRight } from "@mui/icons-material";
+
+import { useState } from 'react';
+import ItemsCarousel from "react-items-carousel";
+
 
 const Container = styled.div`
   margin-top: 6.4rem;
@@ -36,12 +37,6 @@ const StudentsViewingTitle = styled.h2`
   line-height: 1.2;
 `;
 const CourseWrapper = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 1.6rem;
-  grid-auto-columns: calc((100% - (5 - 1) * 1.6rem) / 5);
-  width: 100%;
-
   position: relative;
 `;
 const Arrow = styled.div`
@@ -70,24 +65,45 @@ const Arrow = styled.div`
   }
 `;
 
-const StudentsViewingContainer = () => {
+const CopyStudentsViewingContainer = () => {
+  const [activeItemIndex1, setActiveItemIndex1] = useState(0);
+  const [activeItemIndex2, setActiveItemIndex2] = useState(0);
+  const chevronWidth = 50;
+
   return (
     <Container>
       <CoursesList>
-        <StudentsViewingTitle>StudentsViewing </StudentsViewingTitle>
+        <StudentsViewingTitle>StudentsViewing</StudentsViewingTitle>
 
-        <CourseWrapper>
-          {courses.map((item) => (
-            <Course item={item} key={item.id} />
-          ))}
+        <CourseWrapper>       
+            <ItemsCarousel
+              requestToChangeActive={setActiveItemIndex1}
+              activeItemIndex={activeItemIndex1}
+              numberOfCards={5}
+              gutter={15}
+              leftChevron={<Arrow direction="left">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleLeft}
+                              />}
+                          </Arrow>}
+              rightChevron={<Arrow direction="right">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleRight}
+                              />}
+                            </Arrow>}
+              outsideChevron={false}
+              chevronWidth={chevronWidth}
+            >
+      
+                {courses.map((item) => (
+                    <Course item={item} key={item.id} />
+                ))}
 
-          <Arrow direction="right">
-            <FontAwesomeIcon
-              style={{ color: "white", fontSize: "2rem" }}
-              icon={faAngleRight}
-            />
-          </Arrow>
+            </ItemsCarousel>
         </CourseWrapper>
+
       </CoursesList>
 
       <CoursesList>
@@ -95,29 +111,39 @@ const StudentsViewingContainer = () => {
           Because you searched for{" "}
           <span style={{ color: "purple" }}>"zero to master"</span>{" "}
         </StudentsViewingTitle>
+       
+        <CourseWrapper>       
+            <ItemsCarousel
+              requestToChangeActive={setActiveItemIndex2}
+              activeItemIndex={activeItemIndex2}
+              numberOfCards={5}
+              gutter={15}
+              leftChevron={<Arrow direction="left">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleLeft}
+                              />}
+                          </Arrow>}
+              rightChevron={<Arrow direction="right">{ 
+                              <FontAwesomeIcon
+                                style={{ color: "white", fontSize: "2rem" }}
+                                icon={faAngleRight}
+                              />}
+                            </Arrow>}
+              outsideChevron={false}
+              chevronWidth={chevronWidth}
+            >
+      
+                {sugestedCourses.map((item) => (
+                    <Course item={item} key={item.id} />
+                ))}
 
-        <CourseWrapper>
-          {sugestedCourses.map((item) => (
-            <SuggestedCourse item={item} key={item.id} />
-          ))}
-
-          <Arrow direction="right">
-            <FontAwesomeIcon
-              style={{ color: "white", fontSize: "2rem" }}
-              icon={faAngleRight}
-            />
-          </Arrow>
-
-          <Arrow direction="left">
-            <FontAwesomeIcon
-              style={{ color: "white", fontSize: "2rem" }}
-              icon={faAngleLeft}
-            />
-          </Arrow>
+            </ItemsCarousel>
         </CourseWrapper>
+  
       </CoursesList>
     </Container>
   );
 };
 
-export default StudentsViewingContainer;
+export default CopyStudentsViewingContainer;
