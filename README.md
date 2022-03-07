@@ -26,7 +26,7 @@ comming soon :)
 
 - [Ayako](https://github.com/Ayako-Yokoe): Using GitHub, especially understanding pull request workflow and the GitHub terms was challenging until I got used to it.
 
-- [Phoebe](https://github.com/phoebehala): Created StudentsViewing section and refactored codes by making these components reusable
+- [Phoebe](https://github.com/phoebehala): Created the StudentsViewing section and refactored codes by making these components reusable
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/83237024/156981798-db246a6a-8365-4ad1-ab09-fe960e1e8a3e.gif)
 
 ## Buit With
