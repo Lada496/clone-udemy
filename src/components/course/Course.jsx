@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Star, StarHalf } from '@mui/icons-material';
-import { ListItemSecondaryAction } from '@mui/material';
 
 import styled from "styled-components";
+
 
 const Container = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ const CourseTextWrapper = styled.div`
 `;
 const CourseTitle = styled.h3`
   font-size: 1.6rem;
-  height: 36px;
+  height: 40px;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: normal;
@@ -68,8 +68,10 @@ const CourseRateScore = styled.span`
     letter-spacing: -.02rem;
     font-size: 1.4rem;
 `;
-const CourseRateStars = styled.div``;
-const CourseRateStar = styled.span``;
+const CourseRateStars = styled.div`
+  display: flex;
+  align-items: center;
+`;
 const CourseRateReviewerNum = styled.span`
   color:#6a6f73;
   margin-left: 0.4rem;
@@ -78,12 +80,28 @@ const CourseRateReviewerNum = styled.span`
   font-size: 1.2rem;
 `;
 
+
+// for onsale
+const PriceWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+`;
+const CrossOffPrice = styled.p`
+  text-decoration: line-through;
+  color: #787878;
+  font-weight: 500;
+  font-size: 1.4rem;
+`;
+
 const CoursePrice = styled.div`
     letter-spacing: -.02rem;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
+
 `;
+
+
 
 const CourseMark = styled.div`
     display: inline-block;
@@ -107,7 +125,7 @@ const Course = ( {item} ) => {
 
     <Container>
         <CourseImgWrapper>
-            <CourseImg src={item.img}></CourseImg>
+            <CourseImg src={item.img} alt={item.title}></CourseImg>
         </CourseImgWrapper>
 
         <CourseTextWrapper >
@@ -118,13 +136,12 @@ const Course = ( {item} ) => {
             <CourseRateWrapper>
                 <CourseRateScore>{item.rateScore}</CourseRateScore>
                 <CourseRateStars>
-                    <CourseRateStar>
-                    
+         
                     { [...Array(5)].map((star, index) => {
-
                        while(increment < item.rateScore) {
 
                           if( (item.rateScore-increment)<1){
+                            increment++;
                             return (<StarHalf style={{color:"#e59819"}}></StarHalf>)
                           }
                           increment++;
@@ -132,18 +149,25 @@ const Course = ( {item} ) => {
                       }
                       while(max > item.rateScore) {        
                           max--;
-                       
                           return (<Star style={{color:"gray"}}></Star>)
                       }
      
                     })}    
 
-                    </CourseRateStar>
                 </CourseRateStars>
                 <CourseRateReviewerNum>({item.reviewerNum})</CourseRateReviewerNum>
             </CourseRateWrapper>
+            <PriceWrapper>
+                {item.onSale ? (
+                  <>
+                    <CoursePrice>CA${item.onSalePrice}</CoursePrice>&nbsp;&nbsp;
+                    <CrossOffPrice>CA${item.price}</CrossOffPrice>
+                  </> 
+                ) : (
+                  <CoursePrice>CA${item.price}</CoursePrice>
+                )}
+             </PriceWrapper>
 
-            <CoursePrice>CA${item.price}</CoursePrice>
 
             {item.mark &&<CourseMark>{item.mark}</CourseMark> }
         </CourseTextWrapper>

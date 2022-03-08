@@ -1,13 +1,27 @@
 export const courses = [
     {
-      id: 1,
-      img: "images/studentsViewing/courses/course1.png",
-      title: "The Complete JavaScript Course 2022: From Zero to Expert",
-      desc:"Jonas Schemedtmann",
-      rateScore:4.7,
-      reviewerNum:"128,636",
-      price:199.99,
-      mark: "Bestseller"
+        id: 0,
+        img: "images/studentsViewing/courses/course0.png",
+        title: "Complete Linux Training Course to Get Your Dream IT Job 2022",
+        desc:"Imran Afzal",
+        rateScore:4.6,
+        reviewerNum:"128,636",
+        price:129.99,
+        onSale: true,
+        onSalePrice:99.99,
+        mark: "Bestseller"
+  
+    },
+    {
+        id: 1,
+        img: "images/studentsViewing/courses/course1.png",
+        title: "The Complete JavaScript Course 2022: From Zero to Expert",
+        desc:"Jonas Schemedtmann",
+        rateScore:4.7,
+        reviewerNum:"128,636",
+        price:199.99,
+        onSale: false,
+        mark: "Bestseller"
 
     },
     {
@@ -15,10 +29,11 @@ export const courses = [
         img: "images/studentsViewing/courses/course2.png",
         title: "Microsoft Excel - Excel from Beginner to Advanced ",
         desc:"Kyle Pew, Office Newb",
-        rateScore:4.7,
+        rateScore:4,
         reviewerNum:"285,191",
         price:149.99,
-        mark: "Bestseller"
+        onSale: false,
+ 
     },
     {
         id: 3,
@@ -28,6 +43,7 @@ export const courses = [
         rateScore:4.5,
         reviewerNum:"154,729",
         price:179.99,
+        onSale: false,
         mark: "Bestseller"
     },
     {
@@ -38,6 +54,7 @@ export const courses = [
         rateScore:4.6,
         reviewerNum:"102,409",
         price:139.99,
+        onSale: false,
         mark: "Bestseller"
     },
     {
@@ -48,12 +65,37 @@ export const courses = [
         rateScore:4.6,
         reviewerNum:"64,376",
         price:119.99,
+        onSale: false,
         mark: "Bestseller"
     },
-  ];
+    {
+        id: 6,
+        img: "images/studentsViewing/courses/course6.png",
+        title: " Microsoft Excel - Advanced Excel Formulas & Functions",
+        desc:"Maven Analytics",
+        rateScore:3.6,
+        reviewerNum:"64,376",
+        price:109.99,
+        onSale: true,
+        onSalePrice:79.99,
 
+    },
+  ];
+ 
 
   export const sugestedCourses = [
+    {
+        id: 0,
+        img: "images/studentsViewing/suggestedCourses/sc0.png",
+        title: "Ultimate AWS Certified Solutions Architect Associate 2022",
+        desc:"Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
+        rateScore:3.5,
+        reviewerNum:"261",
+        price:44.99,
+        onSale: false,
+        mark: ""
+  
+    },
     {
       id: 1,
       img: "images/studentsViewing/suggestedCourses/sc1.png",
@@ -62,7 +104,8 @@ export const courses = [
       rateScore:4.3,
       reviewerNum:"261",
       price:44.99,
-      mark: ""
+      onSale: false,
+      mark: "Bestseller"
 
     },
     {
@@ -73,7 +116,8 @@ export const courses = [
         rateScore:4.4,
         reviewerNum:"142",
         price:24.99,
-        mark: ""
+        onSale: false,
+        mark: "Bestseller"
     },
     {
         id: 3,
@@ -81,9 +125,11 @@ export const courses = [
         title: "Modern Ethical Hacking - Complete Course",
         img: "images/studentsViewing/suggestedCourses/sc3.png",
         desc:"Vonnie Hudson",
-        rateScore:4.3,
+        rateScore:4,
         reviewerNum:"35",
         price:119.99,
+        onSale: true,
+        onSalePrice:89.99,
         mark: ""
     },
     {
@@ -94,16 +140,31 @@ export const courses = [
         rateScore:4.3,
         reviewerNum:"44",
         price:54.99,
-        mark: ""
+        onSale: false,
+        mark: "Bestseller"
     },
     {
         id: 5,
         img: "images/studentsViewing/suggestedCourses/sc5.png",
         title: "Learn Android Hacking For Beginners",
         desc:"Colt Steele, lan Schoononver",
-        rateScore:4.2,
+        rateScore:3,
         reviewerNum:"344",
         price:24.99,
+        onSale: false,
+        mark: ""
+    },
+    {
+        id: 6,
+        img: "images/studentsViewing/suggestedCourses/sc6.png",
+        title: "The Web Developer Bootcamp 2022",
+        desc:"Colt Steele",
+        rateScore:4,
+        reviewerNum:"344",
+        price:139.99,
+        onSale: true,
+        onSalePrice:79.99,
         mark: ""
     },
   ];
+

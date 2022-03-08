@@ -6,12 +6,12 @@ const SearchBar = () => {
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: 50,
-    backgroundColor: alpha(theme.palette.grey[200], 0.5),
+    backgroundColor: "#F7F9FA",
     marginLeft: 0,
-    border: "1.5px solid #1c1d1f",
+    border: "1px solid #1c1d1f",
     width: "100%",
-    height: 50,
-    color: theme.palette.text.secondary,
+    height: 48,
+    color: "#8A8B8D",
   }));
 
   const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -27,17 +27,17 @@ const SearchBar = () => {
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: theme.palette.common.black,
     "& .MuiInputBase-input": {
-      padding: theme.spacing(1.9, 1, 1, 1),
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      padding: theme.spacing(1.5, 1, 1, 1),
+      paddingLeft: `calc(1em + ${theme.spacing(5)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
-      fontSize: 15,
+      fontSize: 14,
     },
   }));
   return (
     <Search>
       <SearchIconWrapper>
-        <SearchIcon sx={{ fontSize: 25 }} />
+        <SearchIcon sx={{ fontSize: 24 }} />
       </SearchIconWrapper>
       <StyledInputBase
         placeholder="Search for anything"

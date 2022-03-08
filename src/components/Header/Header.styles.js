@@ -11,8 +11,8 @@ export const ImageBoxContainer = styled.div`
   background-color: #f2f3f5;
   position: relative;
   z-index: -1;
-  @media (min-width: 1490px) {
-    width: 1490px;
+  @media (min-width: 1400px) {
+    width: 1340px;
     margin: auto;
   }
 `;
