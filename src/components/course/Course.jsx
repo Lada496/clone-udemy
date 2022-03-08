@@ -35,7 +35,7 @@ const CourseTextWrapper = styled.div`
 `;
 const CourseTitle = styled.h3`
   font-size: 1.6rem;
-  height: 36px;
+  height: 40px;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: normal;
@@ -72,7 +72,6 @@ const CourseRateStars = styled.div`
   display: flex;
   align-items: center;
 `;
-const CourseRateStar = styled.span``;
 const CourseRateReviewerNum = styled.span`
   color:#6a6f73;
   margin-left: 0.4rem;
@@ -137,8 +136,7 @@ const Course = ( {item} ) => {
             <CourseRateWrapper>
                 <CourseRateScore>{item.rateScore}</CourseRateScore>
                 <CourseRateStars>
-                    <CourseRateStar>
-                    
+         
                     { [...Array(5)].map((star, index) => {
                        while(increment < item.rateScore) {
 
@@ -156,7 +154,6 @@ const Course = ( {item} ) => {
      
                     })}    
 
-                    </CourseRateStar>
                 </CourseRateStars>
                 <CourseRateReviewerNum>({item.reviewerNum})</CourseRateReviewerNum>
             </CourseRateWrapper>
