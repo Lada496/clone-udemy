@@ -35,7 +35,7 @@ const CourseTextWrapper = styled.div`
 `;
 const CourseTitle = styled.h3`
   font-size: 1.6rem;
-  height: 36px;
+  height: 40px;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: normal;
