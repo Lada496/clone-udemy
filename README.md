@@ -18,7 +18,6 @@ comming soon :)
 - To share individual tasks together: We uesd Slack and Trello
   <img width="1432" alt="Screen Shot 2022-02-28 at 19 15 02" src="https://user-images.githubusercontent.com/67321065/156828276-b8e641f2-5778-4c93-8a42-fe64c4770da4.png">
 
-
 ### Personal Challenges
 
 - [Yuko](https://github.com/Lada496): Create categories' menu list by using material ui, context API, and useReducer
@@ -38,4 +37,4 @@ comming soon :)
 
 ## Demo Link
 
-comming soon :)
+URL: https://clone-udemy-landing-page.netlify.app
