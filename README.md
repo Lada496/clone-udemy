@@ -2,9 +2,8 @@
 
 The group project to clone Udemy Landing page.
 
-## Screen shots
-
-comming soon :)
+## Screenshot
+<img width="500" src="https://user-images.githubusercontent.com/67321065/157141474-b4be1336-063f-4d84-b7a4-a442a6845f61.png" alt="clone udemy" />
 
 ## Purpose
 
@@ -17,7 +16,6 @@ comming soon :)
 - To use issues to communicate via GitHub (Releated article: [GitHub: Understand issue close keywords with experiments](https://dev.to/lada496/github-understand-issue-close-keywords-with-experiments-2n5c))
 - To share individual tasks together: We uesd Slack and Trello
   <img width="1432" alt="Screen Shot 2022-02-28 at 19 15 02" src="https://user-images.githubusercontent.com/67321065/156828276-b8e641f2-5778-4c93-8a42-fe64c4770da4.png">
-
 
 ### Personal Challenges
 
@@ -38,4 +36,4 @@ comming soon :)
 
 ## Demo Link
 
-comming soon :)
+URL: https://clone-udemy-landing-page.netlify.app
