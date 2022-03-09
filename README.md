@@ -26,6 +26,8 @@ The group project to clone Udemy Landing page.
 
 - [Phoebe](https://github.com/phoebehala): Created the StudentsViewing section and refactored codes by making these components reusable
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/83237024/156981798-db246a6a-8365-4ad1-ab09-fe960e1e8a3e.gif)
+- [Lily](https://github.com/sh32321): Implemented a carousel function to each course lists.  
+  
 
 ## Buit With
 
