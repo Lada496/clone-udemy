@@ -1,6 +1,6 @@
 # Clone Udemy
 
-The group project to clone Udemy Landing page.
+A group project to clone Udemy Landing page.
 
 ## Screenshot
 <img width="500" src="https://user-images.githubusercontent.com/67321065/157141474-b4be1336-063f-4d84-b7a4-a442a6845f61.png" alt="clone udemy" />
